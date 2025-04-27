@@ -7,6 +7,7 @@ Java RESTful API criada para a Santander Dev Week de 2023.
 ``` mermaid
 classDiagram
     class User {
+        Long id
         String name
         Account account
         List~Feature~ features
@@ -15,6 +16,7 @@ classDiagram
     }
 
     class Account {
+        Long id
         String number
         String agency
         double balance
@@ -22,16 +24,19 @@ classDiagram
     }
 
     class Feature {
+        Long id
         String icon
         String description
     }
 
     class Card {
+        Long id
         String number
         double limit
     }
 
     class News {
+        Long id
         String icon
         String description
     }
