@@ -19,8 +19,8 @@ classDiagram
         Long id
         String number
         String agency
-        double balance
-        double limit
+        BigDecimal balance
+        BigDecimal limit
     }
 
     class Feature {
@@ -32,7 +32,7 @@ classDiagram
     class Card {
         Long id
         String number
-        double limit
+        BigDecimal limit
     }
 
     class News {
