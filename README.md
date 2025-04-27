@@ -23,23 +23,26 @@ classDiagram
         BigDecimal limit
     }
 
-    class Feature {
-        Long id
-        String icon
-        String description
-    }
-
     class Card {
         Long id
         String number
         BigDecimal limit
     }
 
-    class News {
+    class BaseItem {
         Long id
         String icon
         String description
     }
+
+    class Feature {
+    }
+
+    class News {
+    }
+
+    BaseItem <|-- Feature
+    BaseItem <|-- News
 
     User "1" *-- "1" Account
     User "1" *-- "N" Feature
