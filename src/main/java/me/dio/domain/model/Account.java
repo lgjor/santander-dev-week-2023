@@ -17,6 +17,11 @@ public class Account {
     @Column(name= "additional_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
+    // Construtor padrão necessário para JPA
+    public Account() {
+        // Construtor vazio necessário para o funcionamento do JPA/Hibernate
+    }
+
     // Construtor
     public Account(String number, String agency, BigDecimal balance, BigDecimal limit) {
         this.number = number;

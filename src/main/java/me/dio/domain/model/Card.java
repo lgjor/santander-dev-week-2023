@@ -17,6 +17,11 @@ public class Card {
     @Column(name= "available_limit", precision = 13, scale = 2)
     private BigDecimal limit;
 
+    // Construtor padrão necessário para JPA
+    public Card() {
+        // Construtor vazio necessário para o funcionamento do JPA/Hibernate
+    }
+
     // Construtor
     public Card(String number, BigDecimal limit) {
         this.number = number;
